@@ -1,0 +1,40 @@
+.dogCard {
+    padding: 1rem;
+    border: black solid;
+    border-radius: 15px;
+    margin: 1rem;
+    background-color: rgba(255, 255, 255, 0.912);
+}
+
+.dogCard img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 9999rem;
+    border: 1px black solid;
+    overflow: hidden;
+    transition: .8s;
+}
+
+.link_dogCard {
+    text-decoration: none;
+    color: black;
+   
+}
+
+.link_dogCard:hover {
+
+    color: goldenrod;
+}
+.dogCard h2, h4 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
+    margin: 2px;
+}
+.dogCard h2 {
+   
+    margin: 10px;
+}
+.dogCard p {
+    font-family:monospace;
+    margin: 0;
+    padding: 0;
+}

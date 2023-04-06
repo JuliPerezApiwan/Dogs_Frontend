@@ -1,0 +1,57 @@
+
+.loading {
+    height: 100vh;
+}
+
+.loaderContainer {
+    height: 80%;
+}
+
+.home {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/006/431/810/non_2x/seamless-dog-pattern-with-paw-prints-cat-foots-texture-pattern-with-doggy-pawprints-dog-texture-hand-drawn-illustration-in-doodle-style-on-white-background-vector.jpg");
+    height: 103vh;
+	background-color: black;
+    background-size:50%;
+	background-position: center;  
+	background-repeat: repeat;  
+    margin-top: -40px;
+    background-attachment: fixed;
+    overflow: scroll;
+    padding-top: 60px;
+}
+.cards {
+    padding: 3rem;
+    margin-top: -20px;
+    gap: 1rem;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+
+.filters {
+    width:180px;
+    height: 30px;
+    margin: 10px 10px;
+    border: 25px;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    box-shadow: -1px 3px 3px 2px rgba(0,0,0,0.4);
+}
+
+.filters option:hover{
+    cursor: pointer;
+}
+
+.btn_clean {
+    height: 30px;
+    margin: 10px 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: -1px 3px 3px 2px rgba(0,0,0,0.4);
+}
