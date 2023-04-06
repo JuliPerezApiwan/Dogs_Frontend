@@ -5,7 +5,7 @@ export const getAllDogs = () => {
     return async (dispatch) => {
         // const resApi = await axios.get(`https://api.thedogapi.com/v1/breeds?api_key=${MY_API_KEY}`)
         // const dataApi = resApi.data        
-        const response = await axios.get('http://localhost:3001/dogs')
+        const response = await axios.get('/dogs')
         const data = response.data
 
         return dispatch({
@@ -17,7 +17,7 @@ export const getAllDogs = () => {
 
 export const getAllTemperaments = () => {
     return async (dispatch) => {      
-        const response = await axios.get('http://localhost:3001/temperaments')
+        const response = await axios.get('/temperaments')
         const data = response.data
         const temp = data.filter((e) => e.name !== null)
 
@@ -47,7 +47,7 @@ export const filterbyTemperaments = (temperament) => {
   export const getDogsName = (name) => {
     return async (dispatch) => {
       try {
-        const response = await axios.get(`http://localhost:3001/dogs/name?name=${name}`);
+        const response = await axios.get(`/dogs/name?name=${name}`);
       const data = response.data;
       
       return await dispatch({
@@ -63,7 +63,7 @@ export const filterbyTemperaments = (temperament) => {
 
   export const getDogDetail = (id) => {
     return async (dispatch) => {
-      const response = await axios.get(`http://localhost:3001/dogs/${id}`);
+      const response = await axios.get(`/dogs/${id}`);
       const data = response.data;
   
       return dispatch({
@@ -75,7 +75,7 @@ export const filterbyTemperaments = (temperament) => {
 
   export const addDog = (payload) => {
       return  async (dispatch) => {
-      const response =  axios.post('http://localhost:3001/dog', payload);
+      const response =  axios.post('/dog', payload);
       const data = response.data
       
       
